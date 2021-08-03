@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+
+        Error: {{ message }}
+
+        {% if not_exist %}
+                        <a href="{% url 'new_page' %}">Create one</a>
+        {% endif %}
+{% endblock %}
